@@ -1,0 +1,33 @@
+body {
+    color: #fff;
+    background-color:#000000ef;
+}
+a {
+    border-radius: 8%;
+    background-color: #2c2a2a;
+    text-decoration: none;
+    color: #fff;
+    padding-left: 15px;
+    padding-right: 15px;
+    transition: .2s;
+}
+
+p{
+    text-align: center;
+}
+
+.anchor{
+    text-align: center;
+}
+
+#namehr{
+    margin-right: 89%;
+}
+.taskHr{
+    margin-left: 20%;
+    margin-right:20% ;
+}
+a:hover{
+    content: "";
+    font-size: 20px;
+}
