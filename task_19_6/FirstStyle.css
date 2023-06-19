@@ -7,7 +7,9 @@ div{
     width: 40%;
     margin-bottom: 10px;
 }
-
+p{
+    background-color: #ffffff;
+}
 .dot{
     border: 1px dashed #ff7e7e;
 }
