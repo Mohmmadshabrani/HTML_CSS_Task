@@ -6,18 +6,13 @@ div{
     padding-right: 8px;
     width: 40%;
     margin-bottom: 10px;
-}
-p{
     background-color: #ffffff;
-}
-.dot{
-    border: 1px dashed #ff7e7e;
-}
-.firstdiv{
-
     border: 1px solid rgb(78, 76, 76);
 }
 
+.dot{
+    border: 1px dashed #ff7e7e;
+}
 .secondiv{
     border: 1px dashed rgb(78, 76, 76);
 }
