@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .blue{
+            color: blue;
+        }
+        a{
+            color:#ffb35a;
+        }
+        .alookalike{
+            background-color: #ffff01;
+            color: #8d1a73;
+        }
+        ul ul {
+            color: blue;
+            & a{
+                color: red;
+            }
+            & ul{
+                list-style: none;
+            }
+        }
+    </style>
+  </head>
+  <body>
+    <h3><u>Have Fun while Styling !</u></h3>
+    <hr />
+    <p class="blue">
+      Here is a text <a href="#">with a link</a>. Let's do it !
+    </p>
+    <p>We have more <a href="#">Links</a> here ;</p>
+    <p>Is this a (<u class="alookalike">Link</u>?).</p>
+    <p>We have a list</p>
+    <ul>
+        <li><b>Please, <a href="#" class="red">Click Me!</a></b></li><br>
+        <li>Can you ? let's count
+            <ul class="nestedUl">
+                <li><b>111</b></li>
+                <li>222 <a href="#" class="red">Another Links</a></li>
+                <li>333
+                    <ul>
+                        <li> <b>red</b></li>
+                        <li>green</li>
+                        <li>blue <a href="#">Colors Link</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <li>That's Enough !</li>
+        </li>
+    </ul>
+  </body>
+</html>
