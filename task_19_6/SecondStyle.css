@@ -1,0 +1,20 @@
+.para_one{
+    color: orange;
+    width: 40%;
+}
+.inline{
+    font-weight: bold;
+
+}
+.para_two{
+    width: 40%;
+}
+.para_three{
+    padding: 20px;
+    background-image: url(background.jpg);
+    background-repeat: repeat;
+    width: 40%;
+}
+body{
+    background-color: #ffffff;
+}

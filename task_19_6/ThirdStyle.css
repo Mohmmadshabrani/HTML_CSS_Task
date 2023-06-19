@@ -1,0 +1,21 @@
+.last:hover{
+    border: 2px solid grey;
+    font-size: 20px;
+    opacity: 0.5;
+    color: black;
+}
+.paragraphs{
+    width: 40%;
+
+}
+.parent{
+    background-color: white;
+    position: relative;
+}
+img{
+    width: fit-content;
+    width: 200px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
