@@ -11,7 +11,7 @@
 }
 .para_three{
     padding: 20px;
-    background-image: url(background.jpg);
+    background-image: url("../background.jpg");
     background-repeat: repeat;
     width: 40%;
     background-size: 33.33333%;
