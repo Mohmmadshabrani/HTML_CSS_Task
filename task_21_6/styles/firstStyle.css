@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+}
+.Parent{
+    display: flex;
+    flex-direction: row;
+    border: 10px solid #daa520;
+    height: 1000px;
+}
+.Parent div{
+    height: 100%;
+    text-align: center;
+    width:170px;
+    font-size: 140px;
+    color: white;
+}
+.red{
+    background-color: red;
+}
+.green{
+    background-color: #008000;
+}
+.yellow{
+    background-color: yellow;
+}
+.pupr{
+    background-color: purple;
+}
+.gray{
+    background-color: gray;
+}
+.blue{
+    background-color: blue;
+}
+.orange{
+    background-color: orange;
+}
+.pink{
+    background-color: pink;
+}
+.darkred{
+    background-color: darkred;
+}
