@@ -1,86 +1,402 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<html>
+  <head>
+    <title>Chocolate Pizza</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Yellowtail"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Patrick+Hand"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald:400,600,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Crimson+Text"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/miniProejct.css" />
+    <script
+      src="https://kit.fontawesome.com/49fd0aae10.js"
+      crossorigin="anonymous"
+    ></script>
+
+
     <style>
-        html, body {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            width: 100%
-        }
-        .main {
-            border-radius: 2%;
-            box-shadow: -1px -1px black;
-            height: 75%;
-            width: 30%;
-            background-color: rgba(115, 109, 109, 0.358);
-            margin: 1% auto;
-        }
-        .signin p {
-            border-radius: 25%;
-            text-align: center;
-            padding: 15%;
-            color: white;
-            font-size: 40px;
-        }
-        .signin a{
-            display: block;
-            text-align: center;
-            margin-top: 10px;
-        }
-        table {
-            margin: 0 auto;
-        }
-        input[type="text"] {
-            width: 100%; /* Adjust the width as needed */
-            box-sizing: border-box;
-            padding:10px;
-            border:0;
-            box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+        * {
+        box-sizing: border-box;
         }
 
-        @media all and (max-width: 415px) {
-            .main {
-                border: 1px solid gray;
-                background-color: rgba(115, 109, 109, 0.358);
-                width: 90%;
-                height: 90%;
-                margin: 5% auto;
-            }
-            .signin {
-                
-                &p{
-                padding: 10%;
-                font-size: 30px;
-                }
-                &a{
-                    margin-left: 10px;
-                }
-            }
+        .container {
+            margin: 0 auto;
+            width: 75%;
+        }
+
+        .nav-bar {
+            position: relative;
+            margin-top: 2em;
+        }
+
+        .logo {
+            height: 3em;
+            position: absolute;
+            margin-top: 5px;
+        }
+
+        .delicious {
+            font-family: 'Yellowtail', cursive;
+            font-size: 3.5vw;
+            font-weight: 600;
+            margin-left: 1.2em;
+            position: absolute;
+        }
+
+        .best-blog {
+            color: rgb(175, 172, 172);
+            font-family: 'Pathway Gothic One', sans-serif;
+            font-size: xx-small;
+            letter-spacing: .2em;
+            margin-left: 5.5em;
+            margin-top: 4.5em;
+            position: absolute;
+        }
+
+        .social-icons {
+            float: right;
+        }
+
+        .social {
+            width: 1.5em;
+        }
+
+        .clearfix {
+            overflow: auto;
+        }
+
+        h2 {
+            margin: 6em 0 4em 0;
+            padding: 8px;
+        }
+
+        /***** stripe *****/
+        .stripe {
+        background-image: linear-gradient(45deg, #ffffff 28.57%, #e0e0e0 28.57%, #e0e0e0 50%, #ffffff 50%, #ffffff 78.57%, #e0e0e0 78.57%, #e0e0e0 100%);
+        background-size: 9.90px 9.90px;
+        }
+
+        .chocolate-pizza {
+            font-family: 'Oswald', sans-serif;
+            font-size: 3.5vw;
+            font-weight: 700;
+            letter-spacing: -2px;
+            margin-bottom: 1vw;
+        }
+
+        .posted {
+            color: lightgray;
+            display: inline;
+            font-family: 'Pathway Gothic One', sans-serif;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+        }
+
+        .pizza-image {
+            margin-top: 2vw;
+            width: 100%;
+        }
+
+        .print-icon {
+            float: right;
+            width: 1.25em;
+            padding-top: 4px;
+        }
+
+        .print-button {
+            background-color: Transparent;
+            background-repeat: no-repeat;
+            border: none;
+            color: lightgray;
+            cursor: pointer;
+            float: right;
+            font-family: 'Pathway Gothic One', sans-serif;
+            font-size: medium;
+            margin-right: 0;
+            outline: none;
+            overflow: hidden;
+            text-transform: uppercase;
+        }
+
+        .instructions {
+            color: gray;
+            font-family: 'Crimson Text', serif;
+            font-size: large;
+            line-height: 2vw;
+            margin-top: 2vw;
+            text-indent: 3%;
+        }
+
+        .list-background {
+            margin-top: 3.5vw;
+            width: 100%;
+        }
+
+        .col-container {
+            color: gray;
+            display: inherit;
+            font-family: patrick hand, cursive;
+            line-height: 3.5vw;
+            /* did NOT want to do this but rule 1: make it work */
+            margin-top: -23vw;
+            width: 100%;
+        }
+
+        .col {
+            display: inline-block;
+            width: 40%;
+        }
+
+        .column-one {
+            margin-left: 13%;
+        }
+
+        /**** STRIKE THROUGH WHEN CHECKED ****/
+        input[type=checkbox]:checked + label {
+            text-decoration: line-through;
+        }
+
+        .about-vanessa {
+            color: gray;
+            display: inline-block;
+            font-family: 'Crimson Text', serif;
+            width: 75%;
+        }
+
+        .vanessa-pic {
+            position: absolute;
+            width: 6.5vw;
+        }
+
+        .vanessa-name {
+            font-size: x-large;
+            font-weight: 700;
+            margin-bottom: .75em;
+            margin-left: 15%;
+        }
+
+        .vanessa-bio {
+            font-size: large;
+            line-height: 1.3em;
+            margin-left: 15%;
+            width: 85%;
+        }
+
+        .share-button {
+            display: inline;
+
+        }
+
+        .share {
+            color: white;
+            background-color: #ca8767;
+            float: right;
+            font-family: 'Pathway Gothic One', sans-serif;
+            font-size: 31px;
+            padding: 12px;
+            text-transform: uppercase;
+            width: 16vw;
+        }
+
+        .bottom-section {
+            margin-top: 5em;
+        }
+
+        .line-footer, .words-footer {
+            color: gray;
+            font-family: 'Crimson Text', serif;
+            line-height: 1.5em;
+            margin-top: 5em;
+            text-align: center;
+        }
+
+        .line-footer1 {
+            background-color: gray;
+            width: 47%;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+
+        .small-logo {
+            border: 2px solid white;
+            display: inline-block;
+            width: 2em;
+            margin: 0 6px;
+        }
+
+        .line-footer2 {
+            background-color: gray;
+            width: 47%;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+
+        h4 {
+            margin: 6em 0 4em 0;
+            padding: .5px;
+        }
+
+        .published {
+            margin-bottom: 5em;
         }
     </style>
-</head>
 
-<body>
-    <div class="main">
-        <div class="signin">
-            <p>Sign In</p>
-            <table>
-                <tr>
-                    <td>Email:</td>
-                    <td><input type="text"></td>
-                </tr>
-                <tr>
-                    <td>Password:</td>
-                    <td><input type="text"></td>
-                </tr>
-            </table>
-            <a href="">forgat password</a>
-        </div>
-    </div>
-</body>
+
+  </head>
+  <body>
+    <header class="container nav-bar">
+      <img src="images/logo.png" alt="logo" class="logo" />
+      <h3 class="delicious">Delicious</h3>
+      <p class="best-blog">THE BEST FOOD BLOG ON THE WEB.</p>
+      <div class="social-icons">
+        <img src="images/fb-icon.png" alt="facebook" class="social" />
+        <img src="images/twit-icon.png" alt="twitter" class="social" />
+        <img src="images/gp-icon.png" alt="google" class="social" />
+        <img src="images/insta-icon.png" alt="instagram" class="social" />
+        <img src="images/flic-icon.png" alt="flicker" class="social" />
+        <img src="images/pint-icon.png" alt="pinterest" class="social" />
+        <img src="images/empty.png" alt="" class="empty-icon" />
+        <img src="images/rss-icon.png" alt="rss" class="social" />
+        <img src="images/mail-icon.png" alt="email" class="social" />
+      </div>
+      <div class="clearfix"></div>
+    </header>
+    <main class="container">
+      <!-- STRIPE LINE -->
+      <h2 class="stripe"></h2>
+      <h3 class="chocolate-pizza">Chocolate Pizza</h3>
+      <h3 class="posted">Posted on 15 Dec 2013 / Desserts</h3>
+      <button class="print-button">print</button>
+      <img
+        srcced
+        2
+        tbsp
+        butter="images/print-icon.png"
+        alt="print"
+        class="print-icon"
+      />
+      <img
+        src="resourses/choco-pizza.png"
+        alt="chocolate pizza"
+        class="pizza-image"
+      />
+      <!-- INSTRUCTIONS -->
+      <section>
+        <p class="instructions">
+          For the fig-swirl: Melt butter over medium head in a saucepan. Add
+          brown sugar and stir to dissolve. Halve all of the figs and toss on
+          the saucepan with water and lemon juice. Cook over medium head,
+          stirring frequently, until you have a chunky-jammy mixture. Add salt
+          with one or two stirs, set aside and let cool completely.
+        </p>
+        <p class="instructions">
+          Ice cream: In a small pot over medium heat, combine milk, and
+          granulated sugar until sugar is completely dissolved and the milk is
+          just barely lukewarm. Whisk in the egg yolks. Set mixture in the
+          fridge and wait until the fig mixture is cooled.
+        </p>
+        <p class="instructions">
+          Using an ice cream machine, pour liquids into the frozen basin and
+          process according to manufacturer instructions, i.e., let spin and
+          thicken for 20 minutes before adding mascarpone, fig jam mixture, and
+          the nuts.Continue to process for +/-10 minutes. Pour semi-frozen
+          mixture into a pyrex dish or glass tupperware. Freeze for at least two
+          hours before serving.
+        </p>
+      </section>
+      <!-- INGREDIENTS -->
+      <section class="ingredients-list">
+        <img src="resourses/list-bg.png" alt="" class="list-background" />
+        <form class="col-container">
+          <fieldset class="col column-one">
+            <input type="checkbox" value="1" class="strikethrough" />
+            <label for="milk">1 1/2 cups milk</label>
+            <br />
+            <input type="checkbox" class="mascarpone" />
+            <label for="mascarpone">1/2 cup mascarpone</label>
+            <br />
+            <input type="checkbox" class="salt" />
+            <label for="salt">1/2 tsp pink salt</label>
+            <br />
+            <input type="checkbox" class="figs" />
+            <label for="figs">1 lb Black Mission Figs</label>
+            <br />
+            <input type="checkbox" class="brown" />
+            <label for="brown">1/2 cup brown sugar</label>
+            <br />
+            <input type="checkbox" class="water" />
+            <label for="water">2-4 tbsp water</label>
+          </fieldset>
+          <fieldset class="col column-two">
+            <input type="checkbox" class="cream" />
+            <label for="cream">1 1/2 cups heavy cream</label>
+            <br />
+            <input type="checkbox" class="sugar" />
+            <label for="sugar">1/3 cup granulated sugar</label>
+            <br />
+            <input type="checkbox" class="egg" />
+            <label for="egg">2 egg yolks</label>
+            <br />
+            <input type="checkbox" class="lemon" />
+            <label for="lemon">1 lemon, juiced</label>
+            <br />
+            <input type="checkbox" class="butter" />
+            <label for="butter">2 tbsp butter</label>
+            <br />
+            <input type="checkbox" class="pecans" />
+            <label for="pecans"
+              >1 cup honey roasted pecans, roughly chopped</label
+            >
+          </fieldset>
+        </form>
+      </section>
+      <!-- STRIPE LINE -->
+      <h2 class="stripe"></h2>
+      <section class="about-vanessa">
+        <img
+          src="images/van-pic.png"
+          alt="Vanessa Stevenson"
+          class="vanessa-pic"
+        />
+        <h3 class="vanessa-name">Vanessa Stevenson</h3>
+        <p class="vanessa-bio">
+          Food enthusiast, photography fan. Add a pinch of raw foodism and
+          that's pretty much who I am.
+        </p>
+      </section>
+      <section class="share-button">
+        <button class="share">share recipe</button>
+      </section>
+    </main>
+    <footer class="container">
+      <section class="bottom-section">
+        <h4 class="line-footer1"></h4>
+        <img src="images/small-logo.png" alt="small logo" class="small-logo" />
+        <h4 class="line-footer2"></h4>
+      </section>
+      <section class="words-footer">
+        <p>Delicious &copy; 2013 &#183; All Rights Reserver.</p>
+        <p class="published">Proudly published with Ghost.</p>
+      </section>
+    </footer>
+  </body>
 </html>
