@@ -4,8 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        html, body {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%
+        }
+        .main {
+            border-radius: 2%;
+            box-shadow: -1px -1px black;
+            height: 75%;
+            width: 30%;
+            background-color: rgba(115, 109, 109, 0.358);
+            margin: 1% auto;
+        }
+        .signin p {
+            border-radius: 25%;
+            text-align: center;
+            padding: 15%;
+            color: white;
+            font-size: 40px;
+        }
+        .signin a{
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+        }
+        table {
+            margin: 0 auto;
+        }
+        input[type="text"] {
+            width: 100%; /* Adjust the width as needed */
+            box-sizing: border-box;
+            padding:10px;
+            border:0;
+            box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+        }
+
+        @media all and (max-width: 415px) {
+            .main {
+                border: 1px solid gray;
+                background-color: rgba(115, 109, 109, 0.358);
+                width: 90%;
+                height: 90%;
+                margin: 5% auto;
+            }
+            .signin {
+                
+                &p{
+                padding: 10%;
+                font-size: 30px;
+                }
+                &a{
+                    margin-left: 10px;
+                }
+            }
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div class="main">
+        <div class="signin">
+            <p>Sign In</p>
+            <table>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td><input type="text"></td>
+                </tr>
+            </table>
+            <a href="">forgat password</a>
+        </div>
+    </div>
 </body>
 </html>
