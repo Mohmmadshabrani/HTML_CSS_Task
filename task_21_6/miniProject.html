@@ -1,138 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script
-      src="https://kit.fontawesome.com/49fd0aae10.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/49fd0aae10.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Patrick+Hand" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One" rel="stylesheet">
-    <style>
-        .container{
-            width: 50%;
-            margin: 0 auto;
-        }
-        *{
-            box-sizing: border-box;
-        }
-        h2{
-            padding: 8px;
-        }
-        header{
-            padding-top: 20px;
-        }
-        .navbar{
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          & i {
-              font-size: 24px;
-            }
-          & .fa-utensils{
-                font-size: 25px;
-                background-color: #333232;
-                padding: 50%;
-            }
-        }
-        .logo{
-            display: flex;
-            width: 25px;
-            align-items: center;
-        }
-        .cerly{
-            font-size: 40px;
-            font-weight: bold;
-            font-family: 'Brush Script MT', cursive;
-        }
-        [class*= 'fa']:not(.fa-utensils){color: rgb(87, 87, 87);}
-      
-      .italc{
-        white-space: nowrap
-      }
-        .strip {
-        background-image: linear-gradient(
-            45deg,
-            #ffffff 28.57%,
-            #e0e0e0 28.57%,
-            #e0e0e0 50%,
-            #ffffff 50%,
-            #ffffff 78.57%,
-            #e0e0e0 78.57%,
-            #e0e0e0 100%
-        );
-        background-size: 9.9px 9.9px;
-        }
-        h3{
-            font-size: 40px;
-            font-family: 'Oswald', sans-serif;
-            font-weight:800;
-            letter-spacing:-3px;
-            margin-bottom: 0;
-        }
-        .div{
-            display: flex;
-            justify-content: space-between;
-        }
-        .italicFont{
-            font-family: 'Pathway Gothic One', sans-serif;
-            color: gray;
-        }
-        img{
-            width: 100%;
-        }
-        .crmson{
-            font-family: 'Crimson Text', serif;
-            color: gray;
-        }
-        .zaForm{
-            display: grid;
-            grid-template-columns: repeat(2,1fr);
-            background-image: url(./resourses/list-bg.png);
-            box-shadow: -1px 1px 10px 0px grey;
-            margin: 0 auto;
+    <link rel="stylesheet" href="./styles/miniProejct.css">
+</head>
 
-        }
-        td label{
-            font-family: patrick hand, cursive;
-            color: rgba(128, 128, 128, 0.785);
-        }
-        .hr{
-            margin-top: -80px;
-            width: 47%;
-            display: inline-block;
-        }
-
-    </style>
-  </head>
-  <body>
+<body>
     <header class="container">
-      <div class="navbar">
-        <div class="logo">
-          <i class="fa-solid fa-utensils" style="color: white"></i>
-          <div class="subdiv">
-            <span class="cerly"> Delicious</span>
-            <span class="italc"
-              ><span class="italicFont">THE BEST FOOD BLOG ON THE WEB</span>
-          </div>
-        </div>
-        <div>
+        <div class="navbar">
+            <div class="logo">
+                <i class="fa-solid fa-utensils" style="color: white"></i>
+                <div class="subdiv">
+                    <span class="cerly"> Delicious</span>
+                    <span class="italc"><span class="italicFont">THE BEST FOOD BLOG ON THE WEB</span>
+                </div>
+            </div>
+            <div>
 
-          <i class="fa-brands fa-square-facebook"></i>
-          <i class="fa-brands fa-square-twitter"></i>
-          <i class="fa-brands fa-square-google-plus"></i>
-          <i class="fa-brands fa-square-instagram"></i>
-          <i class="fa-brands fa-pinterest"></i>
-          <i class="fa fa-envelope"></i>
-          <i class="fa-brands fa-discord"></i>
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-square-twitter"></i>
+                <i class="fa-brands fa-square-google-plus"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-pinterest"></i>
+                <i class="fa fa-envelope"></i>
+                <i class="fa-brands fa-discord"></i>
 
+            </div>
         </div>
-      </div>
-      <hr>
-      <h2 class="strip"><h2>
+        <hr>
+        <h2 class="strip">
+            <h2>
     </header>
     <main class="container">
         <h3>Chocolate Pizza</h3>
@@ -143,15 +47,25 @@
                 <i class="fa-solid fa-print"></i><label style="margin-left: 5px;" class="italicFont">print</label>
             </div>
         </div>
-        <img src="./resourses/choco-pizza.png" >
+        <img src="./resourses/choco-pizza.png">
         <br>
-        <p class="crmson">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam dolore beatae sit recusandae odio labore doloremque veritatis dolor at, cum rem in modi </p>
-            <p class="crmson">dicta commodi, earum deserunt eaque quos, voluptates maiores qui ullam nostrum nam ad consequuntur! Dignissimos totam sapiente veniam aperiam quo magnam, nostrum sequi iste deleniti nam. Consectetur </p>
-            <p class="crmson">et quis, ut vel quisquam nulla perferendis aliquid nisi incidunt alias distinctio inventore aliquam a reprehenderit corporis id officia. Doloribus, ad id amet, nostrum explicabo maiores molestiae veniam perferendis mollitia numquam voluptas nisi sed facilis quia est totam accusamus placeat odit dicta veritatis. Incidunt quisquam libero doloremque molestias quaerat vel.</p>
-            <p class="crmson">Using an ice cream machine, pour liquids into the frozen basin and process according to manufacturer instructions, i.e., let spin and thicken for 20 minutes before adding mascarpone, fig jam mixture, and the nuts.Continue to process for +/-10 minutes. Pour semi-frozen mixture into a pyrex dish or glass tupperware. Freeze for at least two hours before serving.
-            </p><br><br>
-            <div class="zaForm">
-                <div><form>
+        <p class="crmson">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam dolore beatae sit recusandae
+            odio labore doloremque veritatis dolor at, cum rem in modi </p>
+        <p class="crmson">dicta commodi, earum deserunt eaque quos, voluptates maiores qui ullam nostrum nam ad
+            consequuntur! Dignissimos totam sapiente veniam aperiam quo magnam, nostrum sequi iste deleniti nam.
+            Consectetur </p>
+        <p class="crmson">et quis, ut vel quisquam nulla perferendis aliquid nisi incidunt alias distinctio inventore
+            aliquam a reprehenderit corporis id officia. Doloribus, ad id amet, nostrum explicabo maiores molestiae
+            veniam perferendis mollitia numquam voluptas nisi sed facilis quia est totam accusamus placeat odit dicta
+            veritatis. Incidunt quisquam libero doloremque molestias quaerat vel.</p>
+        <p class="crmson">Using an ice cream machine, pour liquids into the frozen basin and process according to
+            manufacturer instructions, i.e., let spin and thicken for 20 minutes before adding mascarpone, fig jam
+            mixture, and the nuts.Continue to process for +/-10 minutes. Pour semi-frozen mixture into a pyrex dish or
+            glass tupperware. Freeze for at least two hours before serving.
+        </p><br><br>
+        <div class="zaForm">
+            <div>
+                <form>
                     <table>
                         <tr>
                             <td><input type="checkbox"></td>
@@ -178,42 +92,75 @@
                             <td><label for="">2-4 tbsp water</label></td>
                         </tr>
                     </table>
-                </form></div>
-                <div>
-                    <table>
-                        <tr>
-                            <td><input type="checkbox"></td>
-                            <td><label for="">11/2 cups heavy cream</label></td>
-                        </tr>
-                        <tr>
-                            <td><input type="checkbox"></td>
-                            <td><label for="">1/3 cup granulated sugar</label></td>
-                        </tr>
-                        <tr>
-                            <td><input type="checkbox"></td>
-                            <td><label for="">2 egg yolks</label></td>
-                        </tr>
-                        <tr>
-                            <td><input type="checkbox"></td>
-                            <td><label for="">1 lemon, juiced</label></td>
-                        </tr>
-                        <tr>
-                            <td><input type="checkbox"></td>
-                            <td><label for="">2 tbsp butter</label></td>
-                        </tr>
-                        <tr>
-                            <td><input type="checkbox"></td>
-                            <td><label for="">1 cup honey roasted pecans, roughly chopped</label></td>
-                        </tr>
-                    </table>
+                </form>
+            </div>
+            <div>
+                <table>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td><label for="">11/2 cups heavy cream</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td><label for="">1/3 cup granulated sugar</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td><label for="">2 egg yolks</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td><label for="">1 lemon, juiced</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td><label for="">2 tbsp butter</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td><label for="">1 cup honey roasted pecans, roughly chopped</label></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <h2 class="strip" style="padding-bottom: 0;">
+            <h2>
+    </main>
+    <section class="container">
+        <div class="author">
+            <div>
+                <div class="main-sub-div">
+                    <img src="./resourses/van-pic.png" style="width: 100px;">
+                    <div class="sub-div">
+                        <span style="color: gray; font-weight:bold;font-size: 24px;">
+                            Vanessa Stevenson
+                        </span>
+                        <span style="color: gray ; padding-left: 15px;">Food enthusiast, photography fan. Add a pinch of
+                            raw foodism and that's pretty much who I
+                            am.
+                        </span>
+                    </div>
                 </div>
             </div>
-            <h2 class="strip"><h2><br>
-        </main>     
-        <section class="container">
-            <hr class="hr">
-            <i class="fa-solid fa-utensils" style="color: rgb(255, 255, 255); background-color: #333232; padding: 10px;"></i>
-            <hr class="hr">
-        </section>
-  </body>
+            <div>
+                <button class="shareBtn">SHARE RECIPE</button>
+            </div>
+        </div>
+        <hr class="hr">
+        <i class="fa-solid fa-utensils"
+            style="color: rgb(255, 255, 255); background-color: #333232; padding: 10px;"></i>
+        <hr class="hr">
+    </section>
+    <footer class="container">
+        <div class="footer">
+            <span class="footerspan">
+                Delicious © 2013 · All Rights Reserver.
+            </span>
+            <span>
+                Proudly not published with Ghost.
+            </span>
+        </div>
+    </footer>
+</body>
+
 </html>
