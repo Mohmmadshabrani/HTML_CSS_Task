@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/49fd0aae10.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        html , body{
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .Fixednavbar{
+            position: sticky;
+            height: 60px;
+            display: flex;
+            justify-content: space-between;
+            background-color:#333333;
+        }
+
+        .logo{
+            display: flex;
+            & button{
+                height: 100%;
+                width: 120px;
+                border: 0;
+                color: #9B9B9B;
+                font-size: 15px;
+                background-color:#222222 ;
+            }
+            & img{
+                height: 30px;
+                margin: 15px;
+            }
+
+        }
+        .icons{
+            display: flex;
+            height: 100%;
+            & button{
+                background-color: transparent;
+                width: 60px;
+                height: 100%;
+                border-style: none;
+                border: 1px solid rgba(128, 128, 128, 0.196);
+            }
+            & img{
+                width: 25px;
+            }
+            .XBtn{
+                font-size: 30px;
+                color: #9B9B9B;
+                font-weight: bolder;
+            }
+        }
+        .topBar {
+            
+            & img{
+                width: 25px;
+            }
+            & button{
+                background-color: #222222;
+                color: #fff;
+                border-style:none;
+                border-radius: 8%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="Fixednavbar">
+        <div class="logo">
+            <div class="img">
+                <img src="./resources/logo.png" alt="logo">
+            </div>
+            <div><button onclick="ManUpFunc()">+ MANUP</button></div>
+        </div>
+        <div class="icons">
+            <button><img src="./resources/TabletIcon.png"></i></button>
+            <button><img src="./resources/screenIcon.png"></i></button>
+            <button><img src="./resources/PhoneIcon.png"></i></button>
+            <button style="background-color: #7ac64d;"><img src="./resources/cart.png"></button>
+            <button><span class="XBtn">x</span></button>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="topBar">
+                    <button>MENU <img src="./resources/Hamburger-button.png"></button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
