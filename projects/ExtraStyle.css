@@ -482,12 +482,10 @@ a {
 
       & p {
           color: #4e4e4ec0;
-          ;
       }
 
       & div {
           width: 100%;
-
       }
 
       & button {
@@ -548,8 +546,6 @@ a {
   linear-gradient(120deg, #ee8425 0%, #f9488b 100%);
 }
 
-.ShNews {}
-
 .Col-1 {
     background-image: url(./resources/latest-1.jpg.webp);
     background-repeat: no-repeat;
@@ -561,13 +557,13 @@ a {
 }
 
 .BSTA {
-    padding-left: 35px;
-    padding-bottom: 35px;
+    padding-left: 2vb;
+    padding-bottom: 1vb;
 
     & div:nth-child(1) {
         color: #ffffff;
         font-weight: 700;
-        font-size: 24px;
+        font-size: 2vb;
         width: 80%;
     }
 
@@ -601,16 +597,16 @@ a {
 
 .GridView {
     padding-top: 50px;
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    height: 80vh;
-    column-gap: 30px;
-
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    gap: 10px;
     &div {
         position: relative;
+        min-height: 0;
+         min-width: 0;
     }
-
-    & div div {
+    & div div{
         max-height: 100%;
         max-width: 100%;
 
@@ -636,35 +632,7 @@ a {
     top: 30px;
     left: 40px;
 }
-@media only screen and (max-width: 1200px) {
-  .photos div {
-      width: 25%;
-  }
-}
 
-@media only screen and (max-width: 990px) {
-  .photos div {
-      width: 33%;
-  }
-}
-
-@media only screen and (max-width: 761px) {
-  ul {
-      display: none;
-  }
-
-  .menuBtn {
-      display: flex;
-  }
-
-  .Tikectbtn {
-      display: none;
-  }
-
-  .photos div {
-      width: 50%;
-  }
-}
 
 .sub {
   background-image: url(./resources/newslatter-bg.jpg.webp);

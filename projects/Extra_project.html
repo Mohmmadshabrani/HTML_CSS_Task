@@ -12,7 +12,42 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+    <style>
+        @media only screen and (max-width: 1200px) {
+            .photos div {
+                width: 25%;
+            }
+        }
 
+        @media only screen and (max-width: 990px) {
+            .photos div {
+                width: 33%;
+            }
+
+            .GridView {
+                flex-direction: column;
+            }
+
+        }
+
+        @media only screen and (max-width: 761px) {
+            ul {
+                display: none;
+            }
+
+            .menuBtn {
+                display: flex;
+            }
+
+            .Tikectbtn {
+                display: none;
+            }
+
+            .photos div {
+                width: 50%;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -513,16 +548,16 @@
         </div>
     </main>
 </body>
-<script> document.addEventListener('contextmenu',
-        event => event.preventDefault()
-    );
-    document.addEventListener("keydown", function (event) {
-        if (event.ctrlKey) {
-            event.preventDefault();
-        }
-        if (event.keyCode == 123) {
-            event.preventDefault();
-        }
-    });</script>
+<!-- <script> document.addEventListener('contextmenu',
+            event => event.preventDefault()
+        );
+        document.addEventListener("keydown", function (event) {
+            if (event.ctrlKey) {
+                event.preventDefault();
+            }
+            if (event.keyCode == 123) {
+                event.preventDefault();
+            }
+        });</script> -->
 
 </html>
