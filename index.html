@@ -1,39 +1,319 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-    <script>
-      document.addEventListener('contextmenu', 
-      event => event.preventDefault()
-      );
-      document.addEventListener("keydown", function (event){
-      if (event.ctrlKey){
-      event.preventDefault();
-      }
-      if(event.keyCode == 123){
-      event.preventDefault();
-      }
-      });
-  </script>
-  </head>
 
-  <body>
-    <div class="MainContainer">
-      <div class="header-div"></div>
-      <div class="sidebar-div">
-        <div class="tasks"><a href="./pages/TaskHub.html">Tasks</a></div>
-        <div class="sideprojects"><a href="./task_21_6/miniProject.html">Side projects & mini-Proejcts</a></div>
-        <div class="Mainprojects"><a href="">Main projects</a></div>
-        <div class="portfolio"><a href="">Portfolio</a></div>
-        <div class="contacts"><a href="">Contacts</a></div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML & CSS</title>
+  <link rel="icon" type="image/x-icon" href="./html.png">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="container">
+    <!-- nav bar starting -->
+    <nav>
+      <div class="selected page html">
+        <a href="" target="_blank" class="textTag">HTML & CSS</a>
       </div>
-      <div class="content-div">
-        
+      <div class="page js">
+        <a href="https://mohmmadshabrani.github.io/JavaScript_Task/" target="_blank" class="textTag">JavaScript</a>
       </div>
-      <div class="footer-div"></div>
+      <div class="page projects">
+        <a href="" target="_blank" class="textTag">Projects</a>
+      </div>
+      <div class="page masterpiece">
+        <a href="" target="_blank" class="textTag">Masterpiece</a>
+      </div>
+    </nav>
+    <!-- nav bar ending -->
+
+    <!-- starting  of task container -->
+    <div class="taskContainer">
+      <div class="DateSection">
+        <input type="checkbox" name="d10m7" id="d10m7ck">
+        <label for="d10m7ck" class="label">
+          <div class="date">2023/06/14</div>
+          <div class="icon">▼</div>
+        </label>
+        <div class="tasks">
+          <a href="./task_14_6/FirstTask.html" target="_blank">
+            <div class="task">
+              <div class="name"><span>Task no.1</span></div>
+              <div class="status easy"><span>Easy</span></div>
+            </div>
+          </a>
+          <a href="./task_14_6/SecondTask.html" target="_blank">
+            <div class="task">
+              <div class="name"><span>Task no.2</span></div>
+              <div class="status"><span>Easy</span></div>
+            </div>
+          </a>
+          <a href="./task_14_6/ThirdTask.html" target="_blank">
+            <div class="task">
+              <div class="name"><span>Task no.3</span></div>
+              <div class="status"><span>Easy</span></div>
+            </div>
+          </a>
+          <a href="./task_14_6/Forthtask.html" target="_blank">
+            <div class="task">
+              <div class="name"><span>Task no.4</span></div>
+              <div class="status"><span>Easy</span></div>
+            </div>
+          </a>
+          <a href="./task_14_6/FifthTask.html" target="_blank">
+            <div class="task">
+              <div class="name"><span>Task no.5</span></div>
+              <div class="status"><span>Easy</span></div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="DateSection">
+        <input type="checkbox" name="d10m7" id="d10m7ck">
+        <label for="d10m7ck" class="label">
+          <div class="date">2023/06/15</div>
+          <div class="icon">▼</div>
+        </label>
+        <div class="tasks">
+          <a href="./task_15_6/FirstTask.html" target="_blank">
+            <div class="task">
+              <div class="name"><span>Task no.1</span></div>
+              <div class="status easy"><span>Easy</span></div>
+            </div>
+          </a>
+          <a href="./task_15_6/SecondTask.html" target="_blank">
+            <div class="task">
+              <div class="name"><span>Task no.2</span></div>
+              <div class="status"><span>Easy</span></div>
+            </div>
+          </a>
+          <a href="./task_15_6/ThirdTask.html" target="_blank">
+            <div class="task">
+              <div class="name"><span>Task no.3</span></div>
+              <div class="status"><span>Easy</span></div>
+            </div>
+          </a>
+          <a href="./task_15_6/Forthtask.html" target="_blank">
+            <div class="task">
+              <div class="name"><span>Task no.4</span></div>
+              <div class="status"><span>Easy</span></div>
+            </div>
+          </a>
+          <a href="./task_15_6/FifthTask.html" target="_blank">
+            <div class="task">
+              <div class="name"><span>Task no.5</span></div>
+              <div class="status"><span>Easy</span></div>
+            </div>
+          </a>
+          <a href="./task_15_6/SixthTask.html" target="_blank">
+            <div class="task">
+              <div class="name"><span>Task no.6</span></div>
+              <div class="status"><span>Easy</span></div>
+            </div>
+          </a>
+          <a href="./task_15_6/seventhtask.html" target="_blank">
+            <div class="task">
+              <div class="name"><span>Task no.7</span></div>
+              <div class="status"><span>Easy</span></div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="DateSection">
+        <input type="checkbox" name="d10m7" id="d10m7ck">
+        <label for="d10m7ck" class="label">
+          <div class="date">2023/06/18</div>
+          <div class="icon">▼</div>
+        </label>
+        <div class="tasks">
+          <a href="./task_18_6/FirstTask.html" target="_blank">
+            <div class="task">
+              <div class="name"><span>Task no.1</span></div>
+              <div class="status easy"><span>Easy</span></div>
+            </div>
+          </a>
+          <a href="./task_18_6/SecondTask.html" target="_blank">
+            <div class="task">
+              <div class="name"><span>Task no.2</span></div>
+              <div class="status"><span>Easy</span></div>
+            </div>
+          </a>
+          <a href="./task_18_6/ThirdTask.html" target="_blank">
+            <div class="task">
+              <div class="name"><span>Task no.3</span></div>
+              <div class="status"><span>Easy</span></div>
+            </div>
+          </a>
+          <a href="./task_18_6/Forthtask.html" target="_blank">
+            <div class="task">
+              <div class="name"><span>Task no.4</span></div>
+              <div class="status"><span>Easy</span></div>
+            </div>
+          </a>
+          <a href="./task_18_6/FifthTask.html" target="_blank">
+            <div class="task">
+              <div class="name"><span>Task no.5</span></div>
+              <div class="status"><span>Easy</span></div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="DateSection">
+        <input type="checkbox" name="d10m7" id="d10m7ck">
+        <label for="d10m7ck" class="label">
+          <div class="date">2023/06/19</div>
+          <div class="icon">▼</div>
+        </label>
+        <div class="tasks">
+          <a href="./task_19_6/FirstTask.html" target="_blank">
+            <div class="task">
+              <div class="name"><span>Task no.1</span></div>
+              <div class="status easy"><span>Easy</span></div>
+            </div>
+          </a>
+          <a href="./task_19_6/SecondTask.html" target="_blank">
+            <div class="task">
+              <div class="name"><span>Task no.2</span></div>
+              <div class="status"><span>Easy</span></div>
+            </div>
+          </a>
+          <a href="./task_19_6/ThirdTask.html" target="_blank">
+            <div class="task">
+              <div class="name"><span>Task no.3</span></div>
+              <div class="status"><span>Easy</span></div>
+            </div>
+          </a>
+          <a href="./task_19_6/FifthTask.html" target="_blank">
+            <div class="task">
+              <div class="name"><span>Task no.4</span></div>
+              <div class="status"><span>Easy</span></div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+      <div class="DateSection">
+        <input type="checkbox" name="d10m7" id="d10m7ck">
+        <label for="d10m7ck" class="label">
+          <div class="date">2023/06/20</div>
+          <div class="icon">▼</div>
+        </label>
+        <div class="tasks">
+          <a href="./task_20_6/FirstTask.html" target="_blank">
+            <div class="task">
+              <div class="name"><span>Task no.1</span></div>
+              <div class="status easy"><span>Easy</span></div>
+            </div>
+          </a>
+          <a href="./task_20_6/SecondTask.html" target="_blank">
+            <div class="task">
+              <div class="name"><span>Task no.2</span></div>
+              <div class="status"><span>Easy</span></div>
+            </div>
+          </a>
+          
+        </div>
+      </div>
+      <div class="DateSection">
+        <input type="checkbox" name="d10m7" id="d10m7ck">
+        <label for="d10m7ck" class="label">
+          <div class="date">2023/06/21</div>
+          <div class="icon">▼</div>
+        </label>
+        <div class="tasks">
+          <a href="./task_21_6/FirstTask.html" target="_blank">
+            <div class="task">
+              <div class="name"><span>Task no.1</span></div>
+              <div class="status easy"><span>Easy</span></div>
+            </div>
+          </a>
+          <a href="./task_21_6/SecondTask.html" target="_blank">
+            <div class="task">
+              <div class="name"><span>Task no.2</span></div>
+              <div class="status"><span>Easy</span></div>
+            </div>
+          </a>
+          <a href="./task_21_6/ThirdTask.html" target="_blank">
+            <div class="task">
+              <div class="name"><span>Task no.3</span></div>
+              <div class="status"><span>Easy</span></div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="DateSection">
+        <input type="checkbox" name="d10m7" id="d10m7ck">
+        <label for="d10m7ck" class="label">
+          <div class="date">2023/06/25</div>
+          <div class="icon">▼</div>
+        </label>
+        <div class="tasks">
+          <a href="./task_25_6/FirstTask.html" target="_blank">
+            <div class="task">
+              <div class="name"><span>Task no.1</span></div>
+              <div class="status easy"><span>Easy</span></div>
+            </div>
+          </a>
+          <a href="./task_25_6/FirstTaskWithBootStrap.html" target="_blank">
+            <div class="task">
+              <div class="name"><span>Task no.1 Bootstrap</span></div>
+              <div class="status"><span>Easy</span></div>
+            </div>
+          </a>
+          <a href="./task_25_6/Second.html" target="_blank">
+            <div class="task">
+              <div class="name"><span>Task no.2</span></div>
+              <div class="status"><span>Easy</span></div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="DateSection">
+        <input type="checkbox" name="d10m7" id="d10m7ck">
+        <label for="d10m7ck" class="label">
+          <div class="date">2023/06/26</div>
+          <div class="icon">▼</div>
+        </label>
+        <div class="tasks">
+          <a href="./task_26_6/FirstStack.html" target="_blank">
+            <div class="task">
+              <div class="name"><span>Task no.1</span></div>
+              <div class="status easy"><span>Easy</span></div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- <div class="DateSection">
+        <input type="checkbox" name="d10m7" id="d10m7ck">
+        <label for="d10m7ck" class="label">
+          <div class="date">HTML&CSS projects</div>
+          <div class="icon">▼</div>
+        </label>
+        <div class="tasks">
+          <a href="https://mohmmadshabrani.github.io/MiniProject/" target="_blank">
+            <div class="task">
+              <div class="name"><span>MiniProject no.1</span></div>
+              <div class="status easy"><span>Easy</span></div>
+            </div>
+          </a>
+          <a href="./projects/Extra_project.html" target="_blank">
+            <div class="task">
+              <div class="name"><span>MiniProject no.2</span></div>
+              <div class="status easy"><span>Easy</span></div>
+            </div>
+          </a>
+
+        </div>
+      </div> -->
     </div>
-  </body>
+  </div>
+</body>
+<script defer src="main.js"></script>
+
 </html>

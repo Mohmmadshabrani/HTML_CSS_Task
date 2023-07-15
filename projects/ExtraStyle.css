@@ -178,7 +178,7 @@ a {
   background: url(./resources/hero.jpg.webp);
   background-attachment: local;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   width: 100%;
 }
 
@@ -191,7 +191,7 @@ a {
 
   & img {
       max-width: 100%;
-      height: auto;
+      height: 100%;
       width: auto\9;
   }
 }
@@ -747,5 +747,39 @@ a {
       border: 1px solid rgba(255, 255, 255, 0.267);
       margin: 5px;
 
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .photos div {
+      width: 25%;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .photos div {
+      width: 33%;
+  }
+
+  .GridView {
+      flex-direction: column;
+  }
+
+}
+
+@media only screen and (max-width: 761px) {
+  ul {
+      display: none;
+  }
+
+  .menuBtn {
+      display: flex;
+  }
+
+  .Tikectbtn {
+      display: none;
+  }
+
+  .photos div {
+      width: 50%;
   }
 }

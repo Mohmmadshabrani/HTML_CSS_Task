@@ -16,7 +16,7 @@
 }
 .parent{
     background-color: white;
-    background-image: url("athing.png");
+    background-image: url("../athing.png");
     background-repeat: repeat-y;
     position: absolute;
     border: 1px solid black;
